@@ -5,10 +5,24 @@
    
 }
 body{
-    /* height: 0; */
     font-family: sans-serif;
+    height: 0;
     overflow-x: hidden;
- 
+    background-color: black;
+    
+}
+body::-webkit-scrollbar{
+    width: 5px;
+    
+}
+body::-webkit-scrollbar-track{
+    background: rgb(17, 17, 17);
+    opacity: 0;
+    border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color:  rgb(238, 4, 4);
+    border-radius: 20px;
 }
 .logo{
     position: relative;
@@ -130,13 +144,13 @@ nav a:hover{
        background-attachment: fixed;
         background-repeat: no-repeat;
     }
-    .latar1{
+    /* .latar1{
         background-color: black;
         width: 100vw;
         height: 90vh;
         position: absolute;
         top: 100vh;
-    }
+    } */
     .latar2{
         background-image: url(IMAGE/bg.jpg);
         background-size: cover;
@@ -163,10 +177,11 @@ nav a:hover{
         background-position: center center;
         position: absolute;
         top: 410vh;
+        filter: blur(5px);
     }
     .latar5{
-        background-attachment: fixed;
-        background-repeat: no-repeat;
+        /* background-attachment: fixed;
+        background-repeat: no-repeat; */
         background-image: url(IMAGE/bg.jpg);
         background-size: cover;
         background-position: center center;
@@ -381,6 +396,7 @@ nav a:hover{
         width: 450px;
         text-align: left;
         margin-top: 10px;
+        cursor: pointer;
     }
     .special1 p{
         font-size: 16px;
@@ -390,6 +406,7 @@ nav a:hover{
         width: 450px;
         text-align: left;
         margin-top: 10px;
+        cursor: pointer;
     }
     .special2 p{
         font-size: 16px;
@@ -399,6 +416,7 @@ nav a:hover{
         width: 450px;
         text-align: left;
         margin-top: 10px;
+        cursor: pointer;
     }
     .porridge{
         background-color: rgb(238, 4, 4);
@@ -417,6 +435,7 @@ nav a:hover{
         width: 450px;
         text-align: left;
         margin-top: 10px;
+        cursor: pointer;
     }
     .porridge1{
         background-color: rgb(238, 4, 4);
@@ -435,6 +454,7 @@ nav a:hover{
         width: 450px;
         text-align: left;
         margin-top: 10px;
+        cursor: pointer;
     }
     .pasta img{
         width: 33%;
@@ -495,7 +515,6 @@ nav a:hover{
         position: absolute;
         top: 350vh;
         left: 50px;
-
     }
     .layan{
         color: white;
@@ -558,6 +577,7 @@ nav a:hover{
     .layan2 img:hover{
         filter: brightness(100%);
         transform: scale(1.2);
+        transition: 3s ease;
     }
 /* end service */
 /* book table */
@@ -565,7 +585,7 @@ nav a:hover{
         z-index: 1;
         color: white;
         position: absolute;
-        top: 425vh;
+        top: 420vh;
         right: 25%;
         text-align: center;
     }
@@ -585,18 +605,18 @@ nav a:hover{
         width: 40%;
         height: 70vh;
         position: absolute;
-        top: 440vh;
+        top: 435vh;
         right: 20%;
         border-radius: 5px;
     }
     
     form{
         position: absolute;
-        top: 450vh;
+        top: 440vh;
         right: 24%;
         display: grid;
         grid-template-columns: auto auto;
-        grid-gap: 50px 40px;
+        grid-gap: 40px 40px;
         justify-content: center;
         margin-top: 60px;
     }

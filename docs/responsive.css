@@ -12,13 +12,25 @@
     .latar{
         height: 100vh;
     }
+    .latar2{
+        height: 120vh;
+    }
+    .latar4{
+        height: 110vh;
+    }
+    .latar5{
+        height: 140vh;
+    }
+    .latar6{
+        height: 50vh;
+    }
 }
 /* ukuran tablet */
 @media screen and (max-width:768px){
 
 }
 /* ukuran hp */ 
-@media screen and (max-width:576px){
+@media screen and (max-width:375px){
     /* navbar hp */
     
     .logo img{
@@ -42,8 +54,9 @@
         height: 100vh;
         width: 100%;
         background-color: rgb(10, 10, 10);
-        transform: translateX(85%);
+        transform: translateX(88%);
         transition: all 1s;
+        overflow-x: hidden;
     }
     nav ul.slide{
         transform: translateX(0);
